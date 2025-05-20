@@ -1,0 +1,58 @@
+<div class="form-container">
+  <h4 class="text-center mb-4">
+    <i class="fas {{ isEditMode ? 'fa-user-edit' : 'fa-user-plus' }} me-2"></i>
+    {{ isEditMode ? 'Edit Contact' : 'Add New Contact' }}
+  </h4>
+  
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <div class="mb-3">
+      <label for="name" class="form-label">
+        <i class="fas fa-signature me-2"></i>Full Name
+      </label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-user"></i></span>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="contact.name" required>
+      </div>
+    </div>
+    
+    <div class="mb-3">
+      <label for="email" class="form-label">
+        <i class="fas fa-at me-2"></i>Email Address
+      </label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="contact.email" required>
+      </div>
+    </div>
+    
+    <div class="mb-4">
+      <label for="phone" class="form-label">
+        <i class="fas fa-phone-alt me-2"></i>Phone Number
+      </label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
+        <input type="tel" class="form-control" id="phone" name="phone" [(ngModel)]="contact.phone" required>
+      </div>
+    </div>
+    <label for="type">Contact Type</label>
+<select id="type" [(ngModel)]="contact.type" name="type" class="form-select">
+  <option value="" disabled selected>Select type</option>
+  <option value="personal">Personal</option>
+  <option value="work">Work</option>
+  <option value="family">Family</option>
+    </select>
+  <div class="d-flex justify-content-between">
+      <button type="button" routerLink="/" class="btn btn-outline-secondary">
+        <i class="fas fa-arrow-left me-1"></i> Back
+      </button>
+      <div>
+        <button type="reset" class="btn btn-outline-danger me-2 ">
+          <i class="fas fa-undo me-1"></i> Reset
+        </button>
+        <button type="submit" class="btn btn-primary" [disabled]="!contactForm.form.valid">
+          <i class="fas fa-save me-1"></i> {{ isEditMode ? 'Update' : 'Save' }}
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

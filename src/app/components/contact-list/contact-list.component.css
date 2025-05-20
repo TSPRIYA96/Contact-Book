@@ -1,0 +1,40 @@
+:host {
+  display: block;
+}
+
+.contact-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 100px;
+  margin-bottom: 30px;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.contact-header h2 {
+  color: #343a40; /* Dark gray text */
+  font-weight: 600;
+}
+
+.add-btn {
+  background-color: #28a745;
+  border: none;
+  padding: 10px 20px;     /* Increased padding */
+  font-size: 1rem;         /* Adjust font size (default is usually 1rem or 16px) */
+  border-radius: 6px;      /* Slightly more rounded */
+  color: white;
+  transition: all 0.3s;
+}
+
+.add-btn {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

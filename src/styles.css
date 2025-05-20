@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+body {
+  background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial,sans-serif;
+}
+.container {
+  background-color: rgba(240, 248, 255, 0.95); /* AliceBlue with transparency */
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 1000px;
+  margin: 30px auto;
+  box-shadow: 0 4px 20px rgba(70, 130, 180, 0.15); /* SteelBlue shadow */
+  border: 1px solid rgba(173, 216, 230, 0.3); /* LightBlue border */
+}
+
+/* You'll need to update text colors in child elements too */
+.table {
+  background-color: white;
+}
+
+.btn {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Icon styling */
+.fas {
+  font-size: 0.9em;
+  vertical-align: middle;
+}
+
+.btn .fas {
+  font-size: 0.8em;
+}
+
+/* Add some animation to icons */
+.fas:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Specific icon colors */
+.fa-address-book {
+  color: #4e73df;
+}
+
+.fa-edit {
+  color: white;
+}
+
+.fa-trash-alt {
+  color: white;
+}
+
+.fa-plus-circle {
+  color: white;
+}

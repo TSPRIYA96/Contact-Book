@@ -1,0 +1,12 @@
+.add-contact-section {
+  background-color: #f0f4f8; /* Light gray-blue background (customize as needed) */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+.add-contact-section h2 {
+  color: #343a40; /* Dark gray text */
+  font-weight: 600;
+  margin-bottom: 20px;
+}
